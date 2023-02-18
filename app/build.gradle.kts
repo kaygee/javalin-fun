@@ -18,12 +18,13 @@ repositories {
 
 dependencies {
     // Use JUnit Jupiter for testing.
-    testImplementation("org.junit.jupiter:junit-jupiter:5.9.1")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
+    testImplementation("org.mockito:mockito-core:5.1.1")
 
     // This dependency is used by the application.
     implementation("io.javalin:javalin:5.3.2")
     implementation("org.slf4j:slf4j-simple:2.0.3")
-    implementation("com.fasterxml.jackson.core:jackson-databind:2.14.0")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.14.2")
 }
 
 application {

@@ -21,7 +21,8 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.1")
 
     // This dependency is used by the application.
-    implementation("com.google.guava:guava:31.1-jre")
+    implementation("io.javalin:javalin:5.3.2")
+    implementation("org.slf4j:slf4j-simple:2.0.3")
 }
 
 application {

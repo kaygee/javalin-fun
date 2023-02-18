@@ -16,7 +16,6 @@ public class CodeController {
 
         CodeDao codeDao = CodeDao.instance();
         Optional<String> code = codeDao.getCode(product, role, environment);
-
         if (code.isPresent()) {
           ctx.json(new Code(code.get()));
         } else {

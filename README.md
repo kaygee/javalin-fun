@@ -8,3 +8,7 @@
 ## Purpose
 
 Playing around with the Javalin framework to create a super lightweight service.
+
+## Usage
+
+- `./gradlew run`

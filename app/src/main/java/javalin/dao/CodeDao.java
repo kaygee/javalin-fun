@@ -1,6 +1,5 @@
 package javalin.dao;
 
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.Optional;
 import java.util.Properties;
@@ -21,8 +20,8 @@ public class CodeDao {
   public Optional<String> getCode(String product, String role, String environment) {
     Properties properties = new Properties();
     try {
-      var fileReader = new FileReader("config.properties");
-      properties.load(fileReader);
+      var resourceAsStream = getClass().getClassLoader().getResourceAsStream("config.properties");
+      properties.load(resourceAsStream);
     } catch (IOException e) {
       throw new RuntimeException(e);
     }

@@ -19,7 +19,6 @@ repositories {
 dependencies {
     // Use JUnit Jupiter for testing.
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
-    testImplementation("org.mockito:mockito-core:5.1.1")
 
     // This dependency is used by the application.
     implementation("io.javalin:javalin:5.3.2")
@@ -29,7 +28,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass.set("javalin.fun.App")
+    mainClass.set("javalin.fun.PropertyReaderService")
 }
 
 tasks.named<Test>("test") {
